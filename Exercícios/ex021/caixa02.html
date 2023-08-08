@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgrey;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        article{
+            background-color: lightgray;
+        }
+
+        article>aside{
+            background-color: gray;
+        }
+
+        nav{
+            background-color: rgb(88, 88, 88);
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+        }
+
+        nav>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav>a:hover{
+            text-decoration: underline;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+        </section>
+        <section>
+            <article>
+                <h2>Notícia sobre Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nobis illum ipsa soluta aut quasi vero ducimus velit. Molestias ex eum voluptatem quas, nesciunt deleniti! Officiis asperiores debitis adipisci iusto.</p>
+                <aside>
+                    <p>Artigo escrito por Pietro Pereira</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

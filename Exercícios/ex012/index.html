@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos com dados localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor</p>
+    <video controls poster="imagens/Poster.png" autoplay loop width="560">
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+        <source src="midia/Meuvideo.mkv" type="video/mkv">
+        <source src="midia/meuvideo.ogv" type="video/ogv">
+        <source src="midia/Meuvideo.webm" type="video/webm">
+    </video>
+
+    <h1>Inserindo vídeo do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
