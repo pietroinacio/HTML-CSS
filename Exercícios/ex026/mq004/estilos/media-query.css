@@ -3,12 +3,12 @@
 /* Todas as demais mídias */
 
 /* Typical Device Breakpoints:
-    --------------------------
-    Pequenas telas: de 320 até 480px;
-    Celular: de 568 até 812;
-    Tablet: de 768 até 834px;
-    Desktop: de 1025 até 1200px;
-    Grandes telas: acima de 1200px
+	---------------------------------
+	Pequenas telas: até 600px;
+	Celular: de 600px até 768px
+	Tablet: de 768px até 992px;
+	Desktop: de 992px até 1200px;
+	Grandes telas: acima de 1200px
 */
 
 @media print{
@@ -46,7 +46,7 @@
     img#tv{display: none;}
 }*/
 
-@media screen and (min-width: 768px) and (max-width: 834px){
+@media screen and (min-width: 768px) and (max-width: 992px){
     body{
         background-image: url(../imagens/back-tablet.jpg);
     }
@@ -58,7 +58,7 @@
     img#tv{display: none;}
 }
 
-@media screen and (min-width: 1025) and (max-width: 1200px){
+@media screen and (min-width: 992px) and (max-width: 1200px){
     body{
         background-image: url(../imagens/back-pc.jpg);
     }
