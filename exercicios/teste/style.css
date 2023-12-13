@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+:root{
+    --cor-tema: orangered;
+    --cor-fundo: white;
+    --cor-texto: black;
+    --cor-texto-botao: var(--cor-fundo);
+    --transicao: 1s;
+    --rotacao: 0; 
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    transition: var(--transicao);
+    overflow: hidden;
+
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+body.escuro{
+    --cor-tema: #d0d066;
+    --cor-fundo: #333333;
+    --cor-texto: white;
+}
+
+.titulo{
+    margin: 0px;
+    margin-bottom: .5rem;
+}
+
+.botao-tema #botao{
+    margin-right: .5em;
+}
+
+.botao-tema{
+    background-color: var(--cor-tema);
+    color: var(--cor-texto-botao);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+    transition: var(--transicao);
+    transform: scale(1);
+}
+
+.botao-tema:hover, .botao-tema:focus{
+    transform: scale(1.1);
+}
+
+.sol-lua{
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    height: 200vmin;
+    transform: rotate(calc(var(--rotacao) * 1deg));
+    transition: transform var(--transicao);
+}
+
+#sol, #lua{
+    position: absolute;
+    transition: opacity, color, var(--transicao);
+    width: 30px;
+    height: 30px;
+    color: var(--cor-tema);
+    font-size: 3em;
+}
+
+#sol{
+    top: 5%;
+}
+
+.escuro #sol{
+    opacity: 0;
+}
+
+#lua{
+    bottom: 5%;
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+.escuro #lua{
+    opacity: 1;
+}
